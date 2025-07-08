@@ -42,6 +42,12 @@ footer {
 
 /* about page */
 
+section .intro {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -100,9 +106,14 @@ footer {
 
 .timeline .textbox {
     padding: 20px;
-    background-color: rgb(128, 128, 128);
+    background-image: linear-gradient(to bottom right, #3c3c3c, #676767);
     position: relative;
     border-radius: 10px;
+}
+
+.timeline .textbox:hover {
+    background-image: linear-gradient(to bottom right, #002543, #394fc0);
+    transition: background-image 0.5s ease-in-out;
 }
 
 .timeline .left-container {
@@ -185,4 +196,27 @@ footer {
         border-left: 0;
         left: -15px;
     }
+}
+
+#stats {
+    justify-items: center;
+}
+
+#stats .card {
+    background-image: linear-gradient(to bottom right, #939304, #d37f5a);
+    width: 50%;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 30px;
+}
+
+#stats .card h2 {
+    color: rgb(18, 98, 220);
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#stats .card h4 {
+    margin-bottom: 30px;
 }
