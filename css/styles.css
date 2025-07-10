@@ -344,3 +344,81 @@ section .intro {
     border-radius: 5px;
     font-size: 0.9em;
 }
+
+/* products page */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.products .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 196, 0, 0.322);
+    border-radius: 30px;
+    height: 100%;
+}
+
+.products .card-container:hover {
+    background-color: #ab184b;
+    transition: background-color 0.5s ease;
+}
+
+.products .card-container .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.products .card-container .card .top-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.products .card-container .card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+}
+
+.products .card-container .card .product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    min-height: 150px;
+}
+
+.products .card-container .card .product-model {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: rgb(57, 231, 231);
+    margin: 0;
+}
+
+.products .card-container .card .brand {
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.products .card-container .card .description {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+}
